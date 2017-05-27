@@ -157,7 +157,7 @@ class EchoLayer(YowInterfaceLayer):
         #The sleep you write so
 ##        time.sleep(1)
 
-        if messageProtocolEntity.getFrom(False)<>"905073648830-1494155862":
+        if messageProtocolEntity.getFrom(False)<>"xxxxxx":
             if message == 'hi':
                 answer = "Hi "+namemitt+". What can i do for you today?\n-cv\n-aboutme\n-skills\n-temperature\n-speedtest\n-projects"                
                 self.toLower(textmsg(answer, to = recipient ))
@@ -267,7 +267,7 @@ class EchoLayer(YowInterfaceLayer):
                 answer = "Sorry "+namemitt+", I can not understand what you're asking me..\nCould you please write one of the following\n-cv\n-aboutme\n-skills\n-temperature\n-speedtest\n-projects " 
                 self.toLower(textmsg(answer, to = recipient))
                 print answer                
-        elif messageProtocolEntity.getFrom(False)=="905073648830-1494155862":
+        elif messageProtocolEntity.getFrom(False)=="xxxxxxxx":
             answer = "nevar amk"
             self.toLower(textmsg(answer, to = recipient))
             print answer
